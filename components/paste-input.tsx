@@ -3,12 +3,29 @@
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 
+/**
+ * Strip anything that prefixes the actual `org/repo`:
+ *   - protocol (http://, https://)
+ *   - host (github.com, www.github.com)
+ *   - trailing slashes / dotgit / tree+branch / blob+sha paths
+ *
+ * Called both on every keystroke (so paste auto-cleans) and on submit.
+ */
+function cleanInput(raw: string): string {
+  let v = raw.trim();
+  v = v.replace(/^https?:\/\//i, "");
+  v = v.replace(/^(www\.)?github\.com\/?/i, "");
+  // If they pasted "github.com" alone with no slash, kill the whole prefix
+  v = v.replace(/^github\.com$/i, "");
+  // Strip trailing slash + .git
+  v = v.replace(/\.git$/i, "");
+  return v;
+}
+
 function parseRepoInput(raw: string): { owner: string; repo: string } | null {
-  const trimmed = raw.trim();
-  if (!trimmed) return null;
-  // Accept: org/repo, https://github.com/org/repo, github.com/org/repo, org/repo/anything
-  const url = trimmed.replace(/^https?:\/\//, "").replace(/^github\.com\//, "");
-  const parts = url.split(/[/\s]/).filter(Boolean);
+  const cleaned = cleanInput(raw);
+  if (!cleaned) return null;
+  const parts = cleaned.split(/[/\s?#]/).filter(Boolean);
   if (parts.length < 2) return null;
   const owner = parts[0].replace(/[^A-Za-z0-9_.-]/g, "");
   const repo = parts[1].replace(/[^A-Za-z0-9_.-]/g, "").replace(/\.git$/, "");
@@ -50,7 +67,9 @@ export function PasteInput({ autofocus = false }: { autofocus?: boolean }) {
           autoFocus={autofocus}
           value={value}
           onChange={(e) => {
-            setValue(e.target.value);
+            // Strip github.com / https:// etc the instant they type or paste
+            const cleaned = cleanInput(e.target.value);
+            setValue(cleaned);
             if (error) setError(null);
           }}
           placeholder="org/repo"
