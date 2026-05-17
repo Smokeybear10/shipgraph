@@ -49,7 +49,7 @@ export default function RootLayout({
                 about
               </Link>
               <a
-                href="https://github.com/Smokeybear10/shipgraph"
+                href="https://github.com/Smokeybear10/205-PROJ.shipgraph"
                 target="_blank"
                 rel="noreferrer"
                 className="px-2.5 py-1 text-text-muted hover:text-text transition-colors"

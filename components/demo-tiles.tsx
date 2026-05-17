@@ -36,8 +36,8 @@ const DEMOS: Demo[] = [
   },
   {
     org: "Smokeybear10",
-    repo: "knowngraph",
-    label: "Smokeybear10/knowngraph",
+    repo: "shipped",
+    label: "Smokeybear10/shipped",
     hint: "solo project — what a one-person graph looks like",
     scale: "tiny",
     accent: "var(--pink)",

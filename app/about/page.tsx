@@ -72,7 +72,7 @@ export default function AboutPage() {
 
       <footer className="pt-6 border-t border-border">
         <p className="text-xs text-text-dim">
-          built by <a className="hover:text-text-muted transition-colors" href="https://thomasou.com" target="_blank" rel="noreferrer">thomas ou</a> · source on <a className="hover:text-text-muted transition-colors" href="https://github.com/Smokeybear10/shipgraph" target="_blank" rel="noreferrer">github</a>
+          built by <a className="hover:text-text-muted transition-colors" href="https://thomasou.com" target="_blank" rel="noreferrer">thomas ou</a> · source on <a className="hover:text-text-muted transition-colors" href="https://github.com/Smokeybear10/205-PROJ.shipgraph" target="_blank" rel="noreferrer">github</a>
         </p>
       </footer>
     </div>

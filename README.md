@@ -9,8 +9,8 @@ Every dev tool shows you tasks: tickets, PRs, commits, sprints. Almost none show
 ## Quick Start
 
 ```bash
-git clone https://github.com/Smokeybear10/shipgraph
-cd shipgraph
+git clone https://github.com/Smokeybear10/205-PROJ.shipgraph
+cd 205-PROJ.shipgraph
 bun install
 bun run dev
 ```
@@ -95,7 +95,7 @@ Try these from the landing page:
 - **rogerSuperBuilderAlpha/cursor-boston** — the cohort repo itself
 - **anthropics/claude-code** — Claude Code's growing contributor mesh
 - **vercel/next.js** — what scale looks like
-- **Smokeybear10/knowngraph** — solo project
+- **Smokeybear10/shipped** — solo project, single contributor
 
 ---
 
