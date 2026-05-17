@@ -62,7 +62,7 @@ export default function HomePage() {
             why open another tab?
           </h2>
           <p className="text-sm text-text-muted leading-relaxed max-w-2xl">
-            Linear, Asana, Jira show you tasks. GitHub Projects shows you tickets. shipgraph shows
+            Linear, Asana, Jira show you tasks. GitHub Projects shows you tickets. crew shows
             you <span className="text-text">people</span> — and how they actually work together,
             inferred from what they already commit and review. Skip the standup. Open one URL.
           </p>

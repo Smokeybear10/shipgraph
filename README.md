@@ -1,16 +1,16 @@
-# shipgraph | see your team's actual shape
+# crew | see your team's actual shape
 
-**Live: [shipgraph.vercel.app](https://shipgraph.vercel.app)**
+**Live: [crew.vercel.app](https://crew.vercel.app)**
 
 Paste any GitHub repo. We render its contributors as a force-directed graph — who's pairing, who's siloed, who's been carrying. No signup, no setup, no extra tab.
 
-Every dev tool shows you tasks: tickets, PRs, commits, sprints. Almost none show you the *people* and how they actually work together. shipgraph infers that from what teams already do — co-authored commits and PR reviews — and renders it visually.
+Every dev tool shows you tasks: tickets, PRs, commits, sprints. Almost none show you the *people* and how they actually work together. crew infers that from what teams already do — co-authored commits and PR reviews — and renders it visually.
 
 ## Quick Start
 
 ```bash
-git clone https://github.com/Smokeybear10/205-PROJ.shipgraph
-cd 205-PROJ.shipgraph
+git clone https://github.com/Smokeybear10/205-PROJ.crew
+cd 205-PROJ.crew
 bun install
 bun run dev
 ```
@@ -68,7 +68,7 @@ lib/
 
 ## How the Graph Is Built
 
-For a given `org/repo`, shipgraph fetches in parallel:
+For a given `org/repo`, crew fetches in parallel:
 
 1. **Repo metadata** — name, stars, language, topics.
 2. **Top 100 contributors** — login, avatar, total commit count. Bots filtered (`[bot]` suffix or type `Bot`).

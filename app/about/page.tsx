@@ -3,7 +3,7 @@ export default function AboutPage() {
     <div className="mx-auto max-w-2xl w-full px-6 py-12 space-y-10 fade-in">
       <header>
         <div className="font-mono text-[11px] uppercase tracking-widest text-text-dim mb-2">
-          what is shipgraph
+          what is crew
         </div>
         <h1 className="display text-4xl md:text-5xl text-text-strong">
           your team, but <span className="text-accent">visible.</span>
@@ -14,7 +14,7 @@ export default function AboutPage() {
         <p className="text-base text-text leading-relaxed">
           Every dev tool shows you tasks: tickets, PRs, commits, sprints. Almost none of them
           show you the <strong className="text-text-strong">people</strong> and how they
-          actually work together. shipgraph reads any GitHub repo and renders its contributors as
+          actually work together. crew reads any GitHub repo and renders its contributors as
           a force-directed social graph — clumped by who pairs with whom, sized by output, colored
           by recency.
         </p>
@@ -72,7 +72,7 @@ export default function AboutPage() {
 
       <footer className="pt-6 border-t border-border">
         <p className="text-xs text-text-dim">
-          built by <a className="hover:text-text-muted transition-colors" href="https://thomasou.com" target="_blank" rel="noreferrer">thomas ou</a> · source on <a className="hover:text-text-muted transition-colors" href="https://github.com/Smokeybear10/205-PROJ.shipgraph" target="_blank" rel="noreferrer">github</a>
+          built by <a className="hover:text-text-muted transition-colors" href="https://thomasou.com" target="_blank" rel="noreferrer">thomas ou</a> · source on <a className="hover:text-text-muted transition-colors" href="https://github.com/Smokeybear10/205-PROJ.crew" target="_blank" rel="noreferrer">github</a>
         </p>
       </footer>
     </div>

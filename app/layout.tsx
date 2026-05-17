@@ -8,11 +8,11 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "shipgraph — see your team's actual shape",
+  title: "crew — see your team's actual shape",
   description:
     "Paste any GitHub repo. We render its contributors as a force-directed graph — who's pairing, who's siloed, who's been carrying. No signup.",
   openGraph: {
-    title: "shipgraph",
+    title: "crew",
     description: "see your team's actual shape, from any GitHub repo",
     type: "website",
   },
@@ -32,7 +32,7 @@ export default function RootLayout({
             <Link href="/" className="flex items-center gap-2.5 group shrink-0">
               <LogoMark size={22} />
               <span className="font-mono text-[13px] font-semibold tracking-tight text-text-strong">
-                shipgraph
+                crew
               </span>
             </Link>
             <nav className="flex items-center gap-1 text-sm">
@@ -49,7 +49,7 @@ export default function RootLayout({
                 about
               </Link>
               <a
-                href="https://github.com/Smokeybear10/205-PROJ.shipgraph"
+                href="https://github.com/Smokeybear10/205-PROJ.crew"
                 target="_blank"
                 rel="noreferrer"
                 className="px-2.5 py-1 text-text-muted hover:text-text transition-colors"
